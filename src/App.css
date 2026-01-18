@@ -1081,3 +1081,13 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
 }
+.nav-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+  text-align: left;
+}

@@ -116,12 +116,12 @@ function App() {
           <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             {['Home', 'About', 'Experience', 'Projects', 'Skills', 'Contact'].map((item) => (
               <li key={item}>
-                <a
+                <button
                   className={activeSection === item.toLowerCase() ? 'active' : ''}
                   onClick={() => scrollToSection(item.toLowerCase())}
                 >
                   {item}
-                </a>
+                </button>
               </li>
             ))}
           </ul>
