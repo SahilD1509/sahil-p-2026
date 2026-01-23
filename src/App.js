@@ -41,10 +41,10 @@ function App() {
       company: "REVEZA",
       period: "Nov 2024 – Dec 2025",
       points: [
-       "Assisted in developing and maintaining internal web-based tools using JavaScript and React"
-       "Analyzed service performance data and prepared comprehensive reports to support operational improvements"
-       "Collaborated with technical and client-facing teams to identify issues and propose effective solutions"
-       "Conducted field visits to gather client feedback and translate requirements into technical insights"
+       "Assisted in developing and maintaining internal web-based tools using JavaScript and React",
+       "Analyzed service performance data and prepared comprehensive reports to support operational improvements",
+       "Collaborated with technical and client-facing teams to identify issues and propose effective solutions",
+       "Conducted field visits to gather client feedback and translate requirements into technical insights",
        "Supported testing, documentation, and optimization of existing systems to enhance performance"
       ]
     }
