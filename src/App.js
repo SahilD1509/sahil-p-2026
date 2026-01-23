@@ -41,11 +41,11 @@ function App() {
       company: "REVEZA",
       period: "Nov 2024 – Dec 2025",
       points: [
-        "Contributed to various technical and client-facing tasks with focus on quality and efficiency",
-        "Conducted field visits to interact with clients and gather valuable feedback",
-        "Analyzed service performance metrics and identified key areas for improvement",
-        "Collaborated with team to develop solutions enhancing systems and addressing client issues",
-        "Integrated client feedback to optimize services and improve user satisfaction"
+       "Assisted in developing and maintaining internal web-based tools using JavaScript and React"
+       "Analyzed service performance data and prepared comprehensive reports to support operational improvements"
+       "Collaborated with technical and client-facing teams to identify issues and propose effective solutions"
+       "Conducted field visits to gather client feedback and translate requirements into technical insights"
+       "Supported testing, documentation, and optimization of existing systems to enhance performance"
       ]
     }
   ];
