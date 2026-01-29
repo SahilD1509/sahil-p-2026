@@ -127,6 +127,41 @@ body {
   width: 100%;
 }
 
+.nav-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--text-secondary);
+  padding: 0.5rem 0;
+  text-align: left;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-menu button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-menu button:hover,
+.nav-menu button.active {
+  color: var(--primary-color);
+}
+
+.nav-menu button:hover::after,
+.nav-menu button.active::after {
+  width: 100%;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -215,17 +250,35 @@ body {
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.hero-title .gradient-text {
   background: linear-gradient(135deg, var(--text-primary), var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.2;
+}
+
+.hero-title .wave {
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
 }
 
 .wave {
   display: inline-block;
-  animation: wave 2s ease-in-out infinite;
+  animation: wave 2.5s ease-in-out infinite;
   transform-origin: 70% 70%;
+  margin-left: 0.3rem;
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 10;
+  -webkit-text-fill-color: initial;
+  background: none;
+  filter: none;
 }
 
 @keyframes wave {
@@ -234,6 +287,7 @@ body {
   20% { transform: rotate(-8deg); }
   40% { transform: rotate(-4deg); }
   50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
 }
 
 .hero-subtitle {
@@ -1007,6 +1061,10 @@ section {
     font-size: 3rem;
   }
 
+  .wave {
+    font-size: 2.5rem;
+  }
+
   .hero-buttons {
     justify-content: center;
   }
@@ -1027,6 +1085,10 @@ section {
 @media (max-width: 640px) {
   .hero-title {
     font-size: 2.5rem;
+  }
+
+  .wave {
+    font-size: 2rem;
   }
 
   .hero-subtitle {
@@ -1080,14 +1142,4 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
-}
-.nav-menu button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: inherit;
-  font-family: inherit;
-  color: inherit;
-  padding: 0;
-  text-align: left;
 }

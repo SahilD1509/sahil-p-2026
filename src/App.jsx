@@ -142,7 +142,7 @@ function App() {
           <div className="hero-text">
             <div className="greeting">Hello, I'm</div>
             <h1 className="hero-title">
-              Sahil Dhiman
+              <span className="gradient-text">Sahil Dhiman</span>
               <span className="wave">👋</span>
             </h1>
             <div className="hero-subtitle">
